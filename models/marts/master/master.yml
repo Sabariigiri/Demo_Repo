@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: customer_master
+    columns:
+      - name: cust_number
+        tests:
+          - not_null
+          - unique
+
+  - name: product_master
+    columns:
+      - name: product_id
+        tests:
+          - not_null

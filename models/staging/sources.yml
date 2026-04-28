@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: stage
+    database: DBT_DB
+    schema: DBT_SCHEMA
+    tables:
+      - name: cust_mstr_kna1
+      - name: cust_mstr_tkna1
+      - name: prod_mstr_pna1
+      - name: prod_mstr_tpna1
+
+  - name: strage
+    database: DBT_DB
+    schema: DBT_SCHEMA
+    tables:
+      - name: invoice_raw
