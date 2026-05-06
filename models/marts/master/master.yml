@@ -2,12 +2,22 @@ version: 2
 
 models:
   - name: customer_master
+    description: This model serves as a comprehensive repository of customer information, including unique identifiers, names, locations, and country details. It is essential for customer-related analytics and operations.
     columns:
       - name: cust_number
+        description: A unique identifier for each customer.
         tests:
           - not_null
           - unique
 
+      - name: cust_name
+        description: The full name of the customer.
+      - name: cust_location
+        description: The specific location or address of the customer.
+      - name: cust_country
+        description: The country where the customer is located.
+      - name: cust_country_code
+        description: The ISO code representing the customer's country.
   - name: product_master
     columns:
       - name: product_id
